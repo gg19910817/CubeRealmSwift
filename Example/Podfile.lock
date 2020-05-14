@@ -1,0 +1,16 @@
+PODS:
+  - CubeRealmSwift (0.1.0)
+
+DEPENDENCIES:
+  - CubeRealmSwift (from `../`)
+
+EXTERNAL SOURCES:
+  CubeRealmSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CubeRealmSwift: fe3f73d4e509d74b6a707d0659d7980db9f8aad6
+
+PODFILE CHECKSUM: 2b85a85d140efffcd3113051c8c40d7931cc18f0
+
+COCOAPODS: 1.9.1
