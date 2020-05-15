@@ -54,8 +54,11 @@ class FriendShip: Object {
 // 会话，包含 0:单聊 1:群聊
 class Conversation: Object {
     @objc dynamic var type = 0
-    @objc dynamic var group: Group?
+    var name: String? {
+        return type == 0 ? receiver?.name : group?.name
+    }
     @objc dynamic var receiver: User?
+    @objc dynamic var group: Group?
     let messages = List<Message>()
 }
 

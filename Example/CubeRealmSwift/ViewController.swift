@@ -14,9 +14,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        mockUser()
-        mockGroup()
-        mockUserMessage()
+//        mockUser()
+//        mockGroup()
+//        mockUserMessage()
+        
+        let tap = UITapGestureRecognizer.init(target: self, action: #selector(tapAction))
+        self.view.addGestureRecognizer(tap)
+    }
+    
+    @objc func tapAction(tap: UITapGestureRecognizer) {
+        let vc = ConversationViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
